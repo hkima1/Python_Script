@@ -1,0 +1,5 @@
+inp =input("Give me your hex string to convert it to readable format")
+ba = bytearray.fromhex(inp)
+ba.reverse()
+ascii_string = ba.decode("UTF-8")
+print(ascii_string)
